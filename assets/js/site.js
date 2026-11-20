@@ -39,6 +39,14 @@ $$('[data-link]').forEach(a => {
   }
 });
 
+/* ---------- permission-form email (assembled here to keep it away from scrapers) ---------- */
+const PF = ['rbutle50', 'gmail.com'];
+$$('[data-email]').forEach(a => {
+  const addr = PF.join('@');
+  a.href = 'mailto:' + addr + '?subject=' + encodeURIComponent("YM Camp Permission Form – [son's name]");
+  a.textContent = 'Ryan Butler (' + addr + ')';
+});
+
 /* ---------- inline the poster logo (so its font renders) ---------- */
 $$('[data-poster]').forEach(async el => {
   try {
