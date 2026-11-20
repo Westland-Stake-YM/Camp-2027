@@ -215,9 +215,10 @@ if (map) {
     if (focus) tabs[i].focus();
     const a = at(d.from), b = at(d.to);
     seg.setAttribute('stroke-dasharray', `0 ${a} ${b - a} ${L}`);
-    const p = path.getPointAtLength(b), p0 = path.getPointAtLength(Math.max(0, b - 4));
+    const p = path.getPointAtLength(Math.max(0, b - 30)), p0 = path.getPointAtLength(Math.max(0, b - 34));
     const ang = Math.atan2(p.y - p0.y, p.x - p0.x) * 180 / Math.PI;
-    canoe.setAttribute('transform', `translate(${p.x} ${p.y}) rotate(${ang})`);
+    const flip = Math.abs(ang) > 90, tilt = flip ? ang - 180 * Math.sign(ang) : ang;
+    canoe.setAttribute('transform', `translate(${p.x} ${p.y}) rotate(${Math.max(-25, Math.min(25, tilt))})${flip ? ' scale(-1 1)' : ''}`);
     const sc = $('#mapScroll');
     if (sc && sc.scrollWidth > sc.clientWidth + 4) {
       const mid = path.getPointAtLength((a + b) / 2).x;
