@@ -386,3 +386,22 @@ table.menu tbody th{font-family:var(--display);color:var(--rust-ink);letter-spac
 
 .reimb-note{display:flex;gap:10px;align-items:flex-start;padding:12px 16px;border-radius:12px;background:rgba(232,180,96,.2);border:1px solid rgba(200,145,58,.45);color:var(--pine-2);font-size:.95rem}
 .reimb-note svg{flex:none;margin-top:3px;color:var(--rust)}
+
+/* passcode gate */
+.gate{display:none}
+html.locked body>*:not(.gate):not(svg){display:none!important}
+html.locked .gate{display:grid;place-items:center;min-height:100svh;padding:24px;background:linear-gradient(160deg,rgba(20,38,33,.92),rgba(31,59,51,.82)),url(../img/misty-lake-sm.jpg) center/cover}
+.gate-card{width:min(420px,100%);background:var(--cream);border-radius:24px;padding:32px 28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);text-align:center}
+.gate-card h1{font-size:2rem;text-transform:uppercase;margin:.2em 0 .3em}
+.gate-card .lock-badge{background:rgba(196,103,63,.12);border-color:rgba(196,103,63,.4);color:var(--rust-ink)}
+.gate-card p{color:var(--muted);font-size:.98rem}
+.gate-poster{width:110px;margin:0 auto 16px;transform:rotate(-3deg)}
+.gate-card input{width:100%;min-height:52px;border-radius:14px;border:2px solid var(--line);padding:0 16px;font:inherit;font-size:1.1rem;text-align:center;letter-spacing:.08em;background:#fff}
+.gate-card input:focus{outline:none;border-color:var(--teal)}
+.gate-card .btn{width:100%;margin-top:4px}
+.gate-err{min-height:1.4em;color:var(--rust-ink)!important;font-weight:600;margin:.4em 0}
+.gate-back{display:inline-block;margin-top:16px;font-size:.92rem}
+.gate-card.shake{animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.lock-out{margin-left:auto}

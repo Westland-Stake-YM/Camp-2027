@@ -285,3 +285,28 @@ if (calc) {
   $$('[data-step]').forEach(b => b.addEventListener('click', () => { range.value = Math.min(+range.max, Math.max(+range.min, +range.value + +b.dataset.step)); run(); }));
   run();
 }
+
+/* ============================================================
+   LEADER HUB PASSCODE (casual gate — not real security)
+   To change the passcode, replace HUB_HASH with the SHA-256 of
+   the new passcode in lowercase.
+   ============================================================ */
+const HUB_HASH = '3b14a4a52d0ed7aa17d36772472d96f4cb20be5fd55c7bb7162a8f66306d5718';
+const gateForm = $('#gateForm');
+if (gateForm) {
+  const sha = async s => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].map(b => b.toString(16).padStart(2, '0')).join('');
+  if (document.documentElement.classList.contains('locked')) setTimeout(() => $('#gatePass').focus(), 50);
+  gateForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    const v = $('#gatePass').value.trim().toLowerCase();
+    if (await sha(v) === HUB_HASH) {
+      try { localStorage.setItem('ymcamp27:hub', 'ok'); } catch {}
+      document.documentElement.classList.remove('locked');
+      scrollTo(0, 0);
+    } else {
+      $('#gateErr').textContent = "That passcode isn't right. Try again.";
+      gateForm.classList.remove('shake'); void gateForm.offsetWidth; gateForm.classList.add('shake');
+      $('#gatePass').select();
+    }
+  });
+}

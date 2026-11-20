@@ -11,6 +11,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<script>
+/* Leader Hub passcode: keeps casual visitors out. Not real security; private records live in Google. */
+try{ if(localStorage.getItem('ymcamp27:hub')!=='ok') document.documentElement.classList.add('locked'); }catch(e){ document.documentElement.classList.add('locked'); }
+</script>
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body class="page-leaders">
@@ -43,6 +47,19 @@
 </defs>
 </svg>
 
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <form class="gate-card" id="gateForm">
+    <div class="gate-poster" data-poster="assets/img/poster.svg"></div>
+    <div class="lock-badge"><svg width="18" height="18" aria-hidden="true"><use href="#i-lock"/></svg> Crew &amp; camp leaders</div>
+    <h1 id="gateTitle">Crew Leader Hub</h1>
+    <p>Enter the leader passcode. Don't have it? Ask the Stake Young Men presidency.</p>
+    <label for="gatePass" class="sr">Passcode</label>
+    <input id="gatePass" type="password" autocomplete="current-password" placeholder="Passcode" required>
+    <p class="gate-err" id="gateErr" role="alert"></p>
+    <button class="btn btn-rust" type="submit">Enter</button>
+    <a class="gate-back" href="index.html">← Back to the camp site</a>
+  </form>
+</div>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="nav">
