@@ -2,7 +2,7 @@
 
 Website for the Westland Michigan Stake Young Men camp: a five-day canoe trip on the Au Sable River, July 27–31, 2027.
 
-Live site: https://westlandymcamp2027.github.io/Camp-2027/
+Live site: https://westland-stake-ym.github.io/Camp-2027/
 
 ## Pages
 - `index.html`: the general site for young men and families (route map, crews, packing list, safety, registration, FAQ, contacts)
