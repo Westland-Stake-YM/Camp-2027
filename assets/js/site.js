@@ -9,8 +9,8 @@ const CAMP = {
     permissionPdf: 'https://assets.churchofjesuschrist.org/ec/6a/ec6a32b2ded011eda8abeeeeac1eefc32321140e/pd60004035_000_interactive.pdf',
     mapGuidebook: 'https://www.amazon.com/dp/1957347015',
     // Leaders only — these open in Google and are protected by Google sharing:
-    responsesSheet: '',     // Google Sheet with registration responses
-    formsFolder: '',        // Drive folder with signed permission & medical forms
+    responsesSheet: 'https://docs.google.com/spreadsheets/d/1lFMrcqK5gZoSB7FvAg6ObuEcLEXEgM3c4PwF7X6qVuM/edit', // Google Sheet with registration responses
+    formsFolder: 'https://drive.google.com/drive/folders/16rCdMlw1ITwHk2wNgAu39k_wekD0qdMm', // Drive folder with signed permission & medical forms
     volunteerSheet: '',     // Volunteer sign-ups (if used)
     campsiteForm: '',       // Crew Leader Campsite Cash Reimbursement Form (PDF)
     shoppingList: 'assets/docs/crew-menu-shopping-list.pdf', // Full menu & shopping list
