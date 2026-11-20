@@ -201,6 +201,7 @@ section{padding:clamp(72px,10vw,120px) 0;position:relative}
 .bg-paper .card{background:#FBF6EA}
 .card .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--pine);color:var(--gold);margin-bottom:16px}
 .card .ico svg{width:28px;height:28px}
+.ico svg:has(use[href="#i-canoe"]){width:40px;height:40px}
 .card p:last-child,.card ul:last-child{margin-bottom:0}
 .card ul{padding-left:1.1em;margin:0 0 1em}
 .card li{margin:.25em 0}
