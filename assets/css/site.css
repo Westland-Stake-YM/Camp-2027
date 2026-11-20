@@ -374,3 +374,12 @@ table.menu tbody th{font-family:var(--display);color:var(--rust-ink);letter-spac
 .purpose:nth-child(2) .pnum{color:var(--teal-ink)}
 .purpose:nth-child(3) .pnum{color:#B07A1E}
 .note-src{margin-top:22px;font-size:.92rem;color:var(--muted);max-width:90ch}
+
+.guide{display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:start}
+.guide p{font-size:.95rem}
+.guide-cover{display:block;transform:rotate(-3deg);transition:transform .3s;filter:drop-shadow(0 12px 18px rgba(31,59,51,.35))}
+.guide-cover:hover{transform:rotate(0) scale(1.04)}
+.guide-cover img{width:100%;height:auto;border-radius:6px}
+.guide-band{display:grid;grid-template-columns:170px 1fr;gap:32px;align-items:center;margin-top:28px;padding:28px 32px;border-radius:24px;background:#FBF6EA;border:1px solid var(--line)}
+.guide-band h3{font-size:1.6rem}
+@media (max-width:640px){.guide-band{grid-template-columns:1fr;padding:24px}.guide-band .guide-cover{width:150px}}
