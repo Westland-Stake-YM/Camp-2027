@@ -7,7 +7,7 @@ const CAMP = {
   links: {
     registrationForm: '',   // Google Form (public link for parents)
     permissionPdf: 'https://assets.churchofjesuschrist.org/ec/6a/ec6a32b2ded011eda8abeeeeac1eefc32321140e/pd60004035_000_interactive.pdf',
-    mapGuidebook: 'https://a.co/d/0gI79mgP',
+    mapGuidebook: 'https://www.amazon.com/dp/1957347015',
     // Leaders only — these open in Google and are protected by Google sharing:
     responsesSheet: '',     // Google Sheet with registration responses
     formsFolder: '',        // Drive folder with signed permission & medical forms
