@@ -300,7 +300,7 @@ if (gateForm) {
     e.preventDefault();
     const v = $('#gatePass').value.trim().toLowerCase();
     if (await sha(v) === HUB_HASH) {
-      try { localStorage.setItem('ymcamp27:hub', 'ok'); } catch {}
+      try { sessionStorage.setItem('ymcamp27:hub', 'ok'); } catch {}
       document.documentElement.classList.remove('locked');
       scrollTo(0, 0);
     } else {
