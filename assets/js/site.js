@@ -13,7 +13,7 @@ const CAMP = {
     formsFolder: '',        // Drive folder with signed permission & medical forms
     volunteerSheet: '',     // Volunteer sign-ups (if used)
     campsiteForm: '',       // Crew Leader Campsite Cash Reimbursement Form (PDF)
-    shoppingList: '',       // Full menu & shopping list (PDF/Doc)
+    shoppingList: 'assets/docs/crew-menu-shopping-list.pdf', // Full menu & shopping list
   },
 };
 
