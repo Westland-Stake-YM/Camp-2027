@@ -3,7 +3,7 @@
    Leave a link as "" to show it as "coming soon / TBD".
    ============================================================ */
 const CAMP = {
-  start: '2027-07-27T07:00:00-04:00',
+  start: '2027-07-13T07:00:00-04:00',
   links: {
     registrationForm: '',   // Google Form (public link for parents)
     permissionPdf: 'https://assets.churchofjesuschrist.org/ec/6a/ec6a32b2ded011eda8abeeeeac1eefc32321140e/pd60004035_000_interactive.pdf',
@@ -155,23 +155,23 @@ const STOPS = [
   { id: 'mckinley', name: 'McKinley Landing', mile: 62, kind: 'launch', label: 'Takeout · Sat', pos: 'above', anchor: 'end', dx: 16, lift: 28 },
 ];
 const DAYS = [
-  { key: 'tue', tab: 'Tue · Jul 27', title: 'Tuesday, July 27', from: 122.5, to: 115, miles: '7.5', route: 'Grayling → Keystone Landing',
+  { key: 'tue', tab: 'Tue · Jul 13', title: 'Tuesday, July 13', from: 122.5, to: 115, miles: '7.5', route: 'Grayling → Keystone Landing',
     stops: ['grayling', 'keystone'],
     river: 'Swift and narrow, with lots of overhanging trees, deadfall and obstacles. The current is fast, so there\'s little reaction time — this is where everyone learns to steer quickly.',
     sched: [['7:00 AM', 'Meet at ward buildings, load vehicles'], ['7:30 AM', 'Leave for Grayling (about 3 hours)'], ['10:30 AM', 'Arrive Grayling; check in with outfitter'], ['11:30 AM', 'Sack lunch from home'], ['12:30 PM', 'Launch at Grayling (mile 122.5)', 1], ['~2:00 PM', 'Arrive Keystone Landing; set up camp', 1], ['5:30 PM', 'Dinner: roasted hot dogs'], ['7:00 PM', 'Evening devotional / kickoff'], ['7:30 PM', "Campfire, s'mores, get-to-know-you"], ['10:00 PM', 'Lights out']] },
-  { key: 'wed', tab: 'Wed · Jul 28', title: 'Wednesday, July 28', from: 115, to: 100.5, miles: '14.5', route: 'Keystone → Stevens Bridge → Rainbow Bend',
+  { key: 'wed', tab: 'Wed · Jul 14', title: 'Wednesday, July 14', from: 115, to: 100.5, miles: '14.5', route: 'Keystone → Stevens Bridge → Rainbow Bend',
     stops: ['keystone', 'stevens', 'rainbow'],
     river: 'More of the same — still swift, but the river starts getting wider each day. A short morning to Stevens Bridge for lunch, then a long afternoon to Rainbow Bend.',
     sched: [['7:00 AM', 'Wake up'], ['7:30 AM', 'Devotional'], ['8:00 AM', 'Breakfast'], ['9:00 AM', 'Break camp'], ['10:30 AM', 'Launch (3.5 mi)', 1], ['~11:15 AM', 'Stevens Bridge Landing — lunch', 1], ['12:30 PM', 'Launch (11 mi)'], ['~2:45 PM', 'Arrive Rainbow Bend; set up camp', 1], ['5:30 PM', 'Dinner: mac & cheese'], ['7:00 PM', 'Evening devotional & activity'], ['10:00 PM', 'Lights out']] },
-  { key: 'thu', tab: 'Thu · Jul 29', title: 'Thursday, July 29', from: 100.5, to: 78, miles: '22.5', route: 'Rainbow Bend → Luzerne Park → Mio Pond', badge: 'Longest day',
+  { key: 'thu', tab: 'Thu · Jul 15', title: 'Thursday, July 15', from: 100.5, to: 78, miles: '22.5', route: 'Rainbow Bend → Luzerne Park → Mio Pond', badge: 'Longest day',
     stops: ['rainbow', 'luzerne', 'mio'],
     river: 'The big one. The river widens in the afternoon, and the last several miles are Mio Pond — lake paddling with no current. It takes real endurance. Pizza at the end!',
     sched: [['7:00 AM', 'Wake up — pack tents and gear first'], ['7:30 AM', 'Devotional'], ['8:00 AM', 'Quick breakfast; finish loading'], ['9:00 AM', 'Launch early (12 mi)', 1], ['~11:30 AM', 'Luzerne Park — lunch', 1], ['12:30 PM', 'Launch (river, then flat Mio Pond)'], ['~3:45 PM', 'Arrive Mio Pond Campground', 1], ['5:30 PM', 'Dinner: pizza from Mio'], ['7:00 PM', 'Evening devotional'], ['10:00 PM', 'Lights out']] },
-  { key: 'fri', tab: 'Fri · Jul 30', title: 'Friday, July 30', from: 78, to: 72, miles: '6', route: 'Mio Pond → portage Mio Dam → Meadow Springs',
+  { key: 'fri', tab: 'Fri · Jul 16', title: 'Friday, July 16', from: 78, to: 72, miles: '6', route: 'Mio Pond → portage Mio Dam → Meadow Springs',
     stops: ['mio', 'meadow'],
     river: 'Portage around Mio Dam (a fun part of the trip). Below the dam the river is shallower and the current picks up. Short day — then an open afternoon in the river, devotionals and the testimony meeting. No water at Meadow Springs, so we fill up at Mio.',
     sched: [['7:00 AM', 'Wake up'], ['7:30 AM', 'Devotional'], ['8:00 AM', 'Breakfast; fill water jugs'], ['9:00 AM', 'Break camp'], ['10:00 AM', 'Launch; portage around Mio Dam', 1], ['~11:45 AM', 'Arrive Meadow Springs; set up camp', 1], ['12:00 PM', 'Lunch'], ['1:00 PM', 'Open afternoon: river play, relaxing, crew activities', 1], ['5:30 PM', 'Dinner: beef stew & mashed potatoes'], ['7:00 PM', 'Testimony meeting', 1], ['8:00 PM', 'Closing campfire']] },
-  { key: 'sat', tab: 'Sat · Jul 31', title: 'Saturday, July 31', from: 72, to: 62, miles: '10', route: 'Meadow Springs → McKinley Landing → home',
+  { key: 'sat', tab: 'Sat · Jul 17', title: 'Saturday, July 17', from: 72, to: 62, miles: '10', route: 'Meadow Springs → McKinley Landing → home',
     stops: ['meadow', 'mckinley'],
     river: 'Peaceful paddling through the national forest to McKinley Landing — a great way to finish. The outfitter shuttles everyone back to the vehicles in Grayling, and we head home.',
     sched: [['7:00 AM', 'Wake up'], ['7:30 AM', 'Devotional'], ['8:00 AM', 'Breakfast (leftovers)'], ['10:00 AM', 'Launch (10 mi)'], ['~12:00 PM', 'Off the river at McKinley Landing', 1], ['~12:15 PM', 'Outfitter shuttle back to Grayling'], ['~1:45 PM', 'Head home — fast food stop on the way'], ['~5:00 PM', 'Home! Crew leaders text parents an ETA', 1]] },

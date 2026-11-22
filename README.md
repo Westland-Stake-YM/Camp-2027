@@ -1,6 +1,6 @@
 # Westland Stake YM Camp 2027 — "Rejoice in Christ"
 
-Website for the Westland Michigan Stake Young Men camp: a five-day canoe trip on the Au Sable River, July 27–31, 2027.
+Website for the Westland Michigan Stake Young Men camp: a five-day canoe trip on the Au Sable River, July 13–17, 2027.
 
 Live site: https://westland-stake-ym.github.io/Camp-2027/
 
