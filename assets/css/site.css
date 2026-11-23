@@ -405,3 +405,25 @@ html.locked .gate{display:grid;place-items:center;min-height:100svh;padding:24px
 @keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .lock-out{margin-left:auto}
+
+/* Safety sub-heads + weather ladder */
+.sub-head{font-size:1.35rem;margin:44px 0 18px;display:flex;align-items:center;gap:14px}
+.sub-head::after{content:"";flex:1;height:1px;background:currentColor;opacity:.18}
+.sec-head + .sub-head{margin-top:0}
+.wx-hint{color:var(--muted);margin:-6px 0 14px;font-size:.95rem}
+.wx-ladder{display:grid;gap:10px}
+.wx{--c:var(--teal);background:#FBF6EA;border:1px solid var(--line);border-left:8px solid var(--c);border-radius:14px;overflow:hidden}
+.wx.l1{--c:#8FBFB3}.wx.l2{--c:var(--teal-2)}.wx.l3{--c:var(--gold)}.wx.l4{--c:var(--rust)}.wx.l5{--c:var(--rust-ink)}.wx.l6{--c:#6E2318}
+.wx summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;padding:16px 20px}
+.wx summary::-webkit-details-marker{display:none}
+.wx summary::after{content:"+";margin-left:auto;flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--paper);color:var(--rust);font-size:1.3rem;transition:transform .3s}
+.wx[open] summary::after{transform:rotate(45deg);background:var(--c);color:#fff}
+.wx-n{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--c);color:#fff;font-family:var(--display);font-weight:700;font-size:1.25rem}
+.wx-t{display:flex;flex-direction:column;gap:2px}
+.wx-t b{font-family:var(--display);font-size:1.12rem;color:var(--pine-2)}
+.wx-t em{font-style:normal;color:var(--muted)}
+.wx > ul,.wx > ol,.wx > p{margin:0 20px 16px 82px;max-width:72ch}
+.wx > ul,.wx > ol{padding-left:1.1em}
+.wx li{margin:.35em 0}
+@media (max-width:640px){.wx > ul,.wx > ol,.wx > p{margin-left:20px}.wx summary{gap:12px;padding:14px}}
+.card.span2{grid-column:span 2}@media (max-width:640px){.card.span2{grid-column:auto}}
