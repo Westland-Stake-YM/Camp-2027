@@ -427,3 +427,6 @@ html.locked .gate{display:grid;place-items:center;min-height:100svh;padding:24px
 .wx li{margin:.35em 0}
 @media (max-width:640px){.wx > ul,.wx > ol,.wx > p{margin-left:20px}.wx summary{gap:12px;padding:14px}}
 .card.span2{grid-column:span 2}@media (max-width:640px){.card.span2{grid-column:auto}}
+
+.card.full{grid-column:1/-1}
+.card ol{padding-left:1.3em;margin:0 0 1em}.card ol li{margin:.45em 0}.card ol:last-child{margin-bottom:0}
